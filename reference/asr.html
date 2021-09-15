@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">CTUtemplate</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.6</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
       </span>
     </div>
 
@@ -399,8 +399,7 @@
 #&gt; [16] "2020-11-14" "2020-11-14" "2020-11-17" "2020-11-18" "2020-11-18"</div><div class='input'><span class='co'># data &lt;- sae_data</span>
 
 <span class='fu'>asr</span><span class='op'>(</span><span class='va'>sae_data</span>, <span class='fu'><a href='https://rdrr.io/r/base/tempfile.html'>tempfile</a></span><span class='op'>(</span>fileext <span class='op'>=</span> <span class='st'>".docx"</span><span class='op'>)</span><span class='op'>)</span> <span class='co'># using defaults</span>
-</div><div class='output co'>#&gt; <span class='warning'>Warning: asr is moving to the SwissASR package. Use that package instead.</span>
-#&gt; <span class='warning'>This version will cease to function in the near future.</span></div><div class='input'><span class='co'># asr(sae_data, trial_type = "med")</span>
+</div><div class='output co'>#&gt; <span class='error'>Error in asr(sae_data, tempfile(fileext = ".docx")): could not find function "asr"</span></div><div class='input'><span class='co'># asr(sae_data, trial_type = "med")</span>
 
 
 
