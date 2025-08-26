@@ -202,6 +202,7 @@ use_param_report_template <- function(save_as, open = TRUE, ...){
 #' @rdname use_qmd
 #' @param save_in directory to save the main qmd in
 #' @param open logical indicating whether to open the file
+#' @param ping logical whether to check for internet connection
 #' @export
 #' @examples
 #' # dir <- tempdir()
@@ -209,9 +210,9 @@ use_param_report_template <- function(save_as, open = TRUE, ...){
 #' # use_qmd_html(file, FALSE)
 #' # in practice at CTU:
 #' # use_qmd_html("08_Reports_xx/ReportName.qmd", TRUE)
-use_qmd_html <- function(save_in = ".", open = TRUE){
+use_qmd_html <- function(save_in = ".", open = TRUE, ping = TRUE){
 
-  if_no_ping_stop()
+  if(ping) if_no_ping_stop()
 
   use_quarto("html", save_in, open = open)
 
@@ -223,6 +224,7 @@ use_qmd_html <- function(save_in = ".", open = TRUE){
 #' @describeIn use_qmd revealjs Presentation Template
 #' @param save_in directory to save the main qmd in
 #' @param open logical indicating whether to open the file
+#' @param ping logical whether to check for internet connection
 #' @export
 #' @importFrom utils download.file
 #' @examples
@@ -231,9 +233,9 @@ use_qmd_html <- function(save_in = ".", open = TRUE){
 #' # use_qmd_pres(file, FALSE)
 #' # in practice at CTU:
 #' # use_qmd_pres("08_Reports_xx/ReportName.qmd", TRUE)
-use_qmd_pres <- function(save_in = ".", open = TRUE){
+use_qmd_pres <- function(save_in = ".", open = TRUE, ping = TRUE){
 
-  if_no_ping_stop()
+  if(ping) if_no_ping_stop()
 
   use_quarto("pres", save_in, open = open)
 
@@ -246,6 +248,7 @@ use_qmd_pres <- function(save_in = ".", open = TRUE){
 #' @describeIn use_qmd Recruitment Report Template
 #' @param save_in directory to save the main qmd in
 #' @param open logical indicating whether to open the file
+#' @param ping logical whether to check for internet connection
 #' @export
 #' @examples
 #' # dir <- tempdir()
@@ -253,9 +256,9 @@ use_qmd_pres <- function(save_in = ".", open = TRUE){
 #' # use_qmd_html(file, FALSE)
 #' # in practice at CTU:
 #' # use_qmd_htmlrecruitment("08_Reports_xx/ReportName.qmd", TRUE)
-use_qmd_htmlrecruitment <- function(save_in = ".", open = TRUE){
+use_qmd_htmlrecruitment <- function(save_in = ".", open = TRUE, ping = TRUE){
 
-  if_no_ping_stop()
+  if(ping) if_no_ping_stop()
 
   use_quarto("html-rec", save_in, open = open)
 
@@ -267,6 +270,7 @@ use_qmd_htmlrecruitment <- function(save_in = ".", open = TRUE){
 #' @describeIn use_qmd Sample Size Report Template
 #' @param save_in directory to save the main qmd in
 #' @param open logical indicating whether to open the file
+#' @param ping logical whether to check for internet connection
 #' @export
 #' @examples
 #' # dir <- tempdir()
@@ -274,9 +278,9 @@ use_qmd_htmlrecruitment <- function(save_in = ".", open = TRUE){
 #' # use_qmd_html(file, FALSE)
 #' # in practice at CTU:
 #' # use_qmd_htmlrecruitment("08_Reports_xx/ReportName.qmd", TRUE)
-use_qmd_htmlsampsi <- function(save_in = ".", open = TRUE){
+use_qmd_htmlsampsi <- function(save_in = ".", open = TRUE, ping = TRUE){
 
-  if_no_ping_stop()
+  if(ping) if_no_ping_stop()
 
   use_quarto("html-ss", save_in, open = open)
 
@@ -288,6 +292,7 @@ use_qmd_htmlsampsi <- function(save_in = ".", open = TRUE){
 #' @describeIn use_qmd Sample Size Report Template
 #' @param save_in directory to save the main qmd in
 #' @param open logical indicating whether to open the file
+#' @param ping logical whether to check for internet connection
 #' @export
 #' @examples
 #' # dir <- tempdir()
@@ -295,9 +300,9 @@ use_qmd_htmlsampsi <- function(save_in = ".", open = TRUE){
 #' # use_qmd_html(file, FALSE)
 #' # in practice at CTU:
 #' # use_qmd_typst("08_Reports_xx/ReportName.qmd", TRUE)
-use_qmd_typst <- function(save_in = ".", open = TRUE){
+use_qmd_typst <- function(save_in = ".", open = TRUE, ping = TRUE){
 
-  if_no_ping_stop()
+  if_no_ping_stop(ping)
 
   use_quarto("typst", save_in, open = open)
 
@@ -344,6 +349,6 @@ use_quarto <- function(x, dir, open = TRUE){
   }
 }
 
-if_no_ping_stop <- function(){
-  if(!canPingSite("raw.githubusercontent.com")) stop("check internet connection")
+if_no_ping_stop <- function(ping){
+  if(ping) if(!canPingSite("raw.githubusercontent.com")) stop("check internet connection")
 }
