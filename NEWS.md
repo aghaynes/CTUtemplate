@@ -1,3 +1,7 @@
+CTUtemplate 0.6.6
+---------------------
+* make pinging when using use_qmd functions optional
+
 CTUtemplate 0.6.5
 ---------------------
 * optimise randolist template code (thanks to suggestions from MR)
