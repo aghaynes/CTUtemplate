@@ -10,20 +10,22 @@
 This function will download and optionally open the quarto markdown (qmd) file
 and the other necessary files from github.}
 \usage{
-use_qmd_html(save_in = ".", open = TRUE)
+use_qmd_html(save_in = ".", open = TRUE, ping = TRUE)
 
-use_qmd_pres(save_in = ".", open = TRUE)
+use_qmd_pres(save_in = ".", open = TRUE, ping = TRUE)
 
-use_qmd_htmlrecruitment(save_in = ".", open = TRUE)
+use_qmd_htmlrecruitment(save_in = ".", open = TRUE, ping = TRUE)
 
-use_qmd_htmlsampsi(save_in = ".", open = TRUE)
+use_qmd_htmlsampsi(save_in = ".", open = TRUE, ping = TRUE)
 
-use_qmd_typst(save_in = ".", open = TRUE)
+use_qmd_typst(save_in = ".", open = TRUE, ping = TRUE)
 }
 \arguments{
 \item{save_in}{directory to save the main qmd in}
 
 \item{open}{logical indicating whether to open the file}
+
+\item{ping}{logical whether to check for internet connection}
 }
 \description{
 Use the CTU quarto html template
