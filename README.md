@@ -3,7 +3,7 @@
 
 # `CTUtemplate` <img src='man/figures/sticker.png' align="right" width="200">
 
-[![](https://img.shields.io/badge/dev%20version-0.6.6-blue.svg)](https://github.com/CTU-Bern/CTUtemplate)
+[![](https://img.shields.io/badge/dev%20version-0.6.6-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
 
 `CTUtemplate` is a package to create a template directory structure (and
 files) and also includes the CTUs annual safety report function.
@@ -13,13 +13,13 @@ files) and also includes the CTUs annual safety report function.
 `CTUtemplate` is easiest to install via
 
 ``` r
-install.packages('CTUtemplate', repos = c('https://ctu-bern.r-universe.dev', 'https://cloud.r-project.org'))
+install.packages('CTUtemplate', repos = c('https://dcr-unibe-ch.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
 Linux users might have to install from source:
 
 ``` r
-remotes::install_github("CTU-Bern/CTUtemplate")
+remotes::install_github("dcr-unibe-ch/CTUtemplate")
 ```
 
 This may require `Sys.setenv(R_REMOTES_NO_ERRORS_FROM_WARNINGS="true")`
