@@ -3,7 +3,7 @@
 
 # `CTUtemplate` <img src='man/figures/sticker.png' align="right" width="200">
 
-[![](https://img.shields.io/badge/dev%20version-0.6.6-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
+[![](https://img.shields.io/badge/dev%20version-0.6.7-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
 
 `CTUtemplate` is a package to create a template directory structure (and
 files) and also includes the CTUs annual safety report function.
@@ -91,8 +91,9 @@ The above functions will download the templates and other necessary
 files and (optionally) open the `qmd` file for you. You should specify
 the location to save the files
 
-See also the [quarto template repo](https://github.com/CTU-Bern/quarto)
-for more info on our quarto templates.
+See also the [quarto template
+repo](https://github.com/dcr-unibe-ch/quarto) for more info on our
+quarto templates.
 
 See the [quarto guide](https://quarto.org/docs/guide/) for loads of
 info.
