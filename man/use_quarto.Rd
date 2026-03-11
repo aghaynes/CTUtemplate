@@ -2,7 +2,7 @@
 % Please edit documentation in R/use_.R
 \name{use_quarto}
 \alias{use_quarto}
-\title{Get a quarto template from the CTU-Bern quarto repository}
+\title{Get a quarto template from the dcr-unibe-ch quarto repository}
 \usage{
 use_quarto(x, dir, open = TRUE)
 }
@@ -17,7 +17,7 @@ use_quarto(x, dir, open = TRUE)
 a qmd file (and extension file)
 }
 \description{
-Get a quarto template from the CTU-Bern quarto repository
+Get a quarto template from the dcr-unibe-ch quarto repository
 }
 \examples{
 #use_quarto("html", ".")

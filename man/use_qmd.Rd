@@ -6,7 +6,7 @@
 \alias{use_qmd_htmlrecruitment}
 \alias{use_qmd_htmlsampsi}
 \alias{use_qmd_typst}
-\title{Use the CTU quarto html template
+\title{Use the DCR quarto html template
 This function will download and optionally open the quarto markdown (qmd) file
 and the other necessary files from github.}
 \usage{
@@ -28,23 +28,23 @@ use_qmd_typst(save_in = ".", open = TRUE, ping = TRUE)
 \item{ping}{logical whether to check for internet connection}
 }
 \description{
-Use the CTU quarto html template
+Use the DCR quarto html template
 This function will download and optionally open the quarto markdown (qmd) file
 and the other necessary files from github.
 
-Use the CTU quarto revealjs presentation template
+Use the DCR quarto revealjs presentation template
 This function will download and optionally open the quarto markdown (qmd) file
 and the other necessary files from github.
 
-Use the CTU quarto html recruitment report template
+Use the DCR quarto html recruitment report template
 This function will download and optionally open the quarto markdown (qmd) file
 and the other necessary files from github.
 
-Use the CTU quarto html sample size report template
+Use the DCR quarto html sample size report template
 This function will download and optionally open the quarto markdown (qmd) file
 and the other necessary files from github.
 
-Use the CTU quarto typst template
+Use the DCR quarto typst template
 This function will download and optionally open the quarto markdown (qmd) file
 and the other necessary files from github.
 }
