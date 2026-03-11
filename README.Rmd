@@ -86,7 +86,7 @@ use_qmd_typst("folder")
 
 The above functions will download the templates and other necessary files and (optionally) open the `qmd` file for you. You should specify the location to save the files
 
-See also the [quarto template repo](https://github.com/CTU-Bern/quarto) for more info on our quarto templates. 
+See also the [quarto template repo](https://github.com/dcr-unibe-ch/quarto) for more info on our quarto templates. 
 
 See the [quarto guide](https://quarto.org/docs/guide/) for loads of info.
 

@@ -1,3 +1,7 @@
+CTUtemplate 0.6.7
+---------------------
+* update use_qmd_* functions to use the DCR organization
+
 CTUtemplate 0.6.6
 ---------------------
 * make pinging when using use_qmd functions optional
