@@ -16,7 +16,7 @@
 #'
 #' # install.univ.packages("randotools")
 #'
-install.univ.packages <- function(x, univ = "https://ctu-bern.r-universe.dev"){
+install.univ.packages <- function(x, univ = "https://dcr-unibe-ch.r-universe.dev"){
 
   pkgs <- jsonlite::stream_in(url(paste0(univ, "/stats/descriptions/")))
   if(any(!x %in% pkgs$Package)){
