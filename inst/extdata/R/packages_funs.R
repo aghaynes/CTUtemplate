@@ -1,13 +1,13 @@
 
 # install missing packages (leave commented out) ----
 # install.packages("presize")
-# install.packages("presize", repos = "https://ctu-bern.r-universe.dev") # dev version
-# install.packages("accrualPlot", repos = "https://ctu-bern.r-universe.dev")
-# install.packages("kpitools", repos = "https://ctu-bern.r-universe.dev")
-# install.packages("btabler", repos = "https://ctu-bern.r-universe.dev")
-# install.packages("SwissASR", repos = "https://ctu-bern.r-universe.dev")
-# install.packages("unibeCols", repos = "https://ctu-bern.r-universe.dev")
-# install.packages("redcaptools", repos = "https://ctu-bern.r-universe.dev")
+# install.packages("presize", repos = "https://dcr-unibe-ch.r-universe.dev") # dev version
+# install.packages("accrualPlot", repos = "https://dcr-unibe-ch.r-universe.dev")
+# install.packages("kpitools", repos = "https://dcr-unibe-ch.r-universe.dev")
+# install.packages("btabler", repos = "https://dcr-unibe-ch.r-universe.dev")
+# install.packages("SwissASR", repos = "https://dcr-unibe-ch.r-universe.dev")
+# install.packages("unibeCols", repos = "https://dcr-unibe-ch.r-universe.dev")
+# install.packages("redcaptools", repos = "https://dcr-unibe-ch.r-universe.dev")
 # install.packages("secuTrialR")
 
 # install.packages("groundhog")

@@ -1,10 +1,11 @@
+CTUtemplate 0.6.8
+---------------------
+* add function `install.univ.packages` for easier installation of R-universe packages
+* update github/universe links in templates
+
 CTUtemplate 0.6.7
 ---------------------
-<<<<<<< HEAD
-* add function `install.univ.packages` for easier installation of R-universe packages
-=======
 * update use_qmd_* functions to use the DCR organization
->>>>>>> 9a8275e8e28dd5f88379b40b016ddbff68742eb5
 
 CTUtemplate 0.6.6
 ---------------------

@@ -43,7 +43,7 @@ projname <- "PROJECTNAME"
 setwd(glue::glue("R://Clinical studies//{projnum}_{projname}//10_Randomisation_Decoding_{projnum}//{FOLDER}_{projnum}"))
 
 # packages
-# remotes::install_github("CTU-Bern/randotools")
+# remotes::install_github("dcr-unibe-ch/randotools")
 library(randotools)
 
 
