@@ -11,6 +11,7 @@
 #' @returns NULL
 #' @export
 #' @importFrom jsonlite stream_in
+#' @importFrom utils install.packages
 #'
 #' @examples
 #'

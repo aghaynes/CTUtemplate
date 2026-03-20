@@ -4,7 +4,7 @@
 \alias{install.univ.packages}
 \title{Install packages from an R-universe}
 \usage{
-install.univ.packages(x, univ = "https://ctu-bern.r-universe.dev")
+install.univ.packages(x, univ = "https://dcr-unibe-ch.r-universe.dev")
 }
 \arguments{
 \item{x}{package(s) to install}
