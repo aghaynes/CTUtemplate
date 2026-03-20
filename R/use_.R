@@ -196,7 +196,7 @@ use_param_report_template <- function(save_as, open = TRUE, ...){
 }
 
 
-#' Use the CTU quarto html template
+#' Use the DCR quarto html template
 #' This function will download and optionally open the quarto markdown (qmd) file
 #' and the other necessary files from github.
 #' @rdname use_qmd
@@ -218,7 +218,7 @@ use_qmd_html <- function(save_in = ".", open = TRUE, ping = TRUE){
 
 }
 
-#' Use the CTU quarto revealjs presentation template
+#' Use the DCR quarto revealjs presentation template
 #' This function will download and optionally open the quarto markdown (qmd) file
 #' and the other necessary files from github.
 #' @describeIn use_qmd revealjs Presentation Template
@@ -242,7 +242,7 @@ use_qmd_pres <- function(save_in = ".", open = TRUE, ping = TRUE){
 }
 
 
-#' Use the CTU quarto html recruitment report template
+#' Use the DCR quarto html recruitment report template
 #' This function will download and optionally open the quarto markdown (qmd) file
 #' and the other necessary files from github.
 #' @describeIn use_qmd Recruitment Report Template
@@ -264,7 +264,7 @@ use_qmd_htmlrecruitment <- function(save_in = ".", open = TRUE, ping = TRUE){
 
 }
 
-#' Use the CTU quarto html sample size report template
+#' Use the DCR quarto html sample size report template
 #' This function will download and optionally open the quarto markdown (qmd) file
 #' and the other necessary files from github.
 #' @describeIn use_qmd Sample Size Report Template
@@ -286,7 +286,7 @@ use_qmd_htmlsampsi <- function(save_in = ".", open = TRUE, ping = TRUE){
 
 }
 
-#' Use the CTU quarto typst template
+#' Use the DCR quarto typst template
 #' This function will download and optionally open the quarto markdown (qmd) file
 #' and the other necessary files from github.
 #' @describeIn use_qmd Sample Size Report Template
@@ -310,7 +310,7 @@ use_qmd_typst <- function(save_in = ".", open = TRUE, ping = TRUE){
 
 
 
-#' Get a quarto template from the CTU-Bern quarto repository
+#' Get a quarto template from the dcr-unibe-ch quarto repository
 #'
 #' @param x branch name of the template in question
 #' @param dir folder in which to save the template
@@ -324,7 +324,7 @@ use_qmd_typst <- function(save_in = ".", open = TRUE, ping = TRUE){
 use_quarto <- function(x, dir, open = TRUE){
 
   if(!x %in% c("html", "html-ss", "html-rec", "pres", "typst")){
-    stop("unknown branch of CTU-Bern/quarto")
+    stop("unknown branch of dcr-unibe-ch/quarto")
   }
 
   wd <- getwd()
@@ -333,7 +333,7 @@ use_quarto <- function(x, dir, open = TRUE){
   setwd(dir)
   if(length(list.files()) > 0) stop("'dir' is not empty - an empty 'dir' is necessary")
 
-  system(glue("quarto use template CTU-Bern/quarto@{x} --no-prompt"))
+  system(glue("quarto use template dcr-unibe-ch/quarto@{x} --no-prompt"))
 
   message("You probably want to rename the .qmd file in dir")
 
