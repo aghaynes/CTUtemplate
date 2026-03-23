@@ -1,3 +1,7 @@
+CTUtemplate 0.6.9
+---------------------
+* better links in templates (support for dependency installation)
+
 CTUtemplate 0.6.8
 ---------------------
 * add function `install.univ.packages` for easier installation of R-universe packages
