@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">CTUtemplate</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.6.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.6.10</span>
       </span>
     </div>
 
@@ -62,17 +62,17 @@
 <div class="page-header"><h1 id="ctutemplate-">
 <code>CTUtemplate</code> <img src="reference/figures/sticker.png" align="right" width="200"><a class="anchor" aria-label="anchor" href="#ctutemplate-"></a>
 </h1></div>
-<p><a href="https://github.com/CTU-Bern/CTUtemplate" class="external-link"><img src="https://img.shields.io/badge/dev%20version-0.6.7-blue.svg"></a></p>
+<p><a href="https://github.com/dcr-unibe-ch/CTUtemplate" class="external-link"><img src="https://img.shields.io/badge/dev%20version-0.6.10-blue.svg"></a></p>
 <p><code>CTUtemplate</code> is a package to create a template directory structure (and files) and also includes the CTUs annual safety report function.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p><code>CTUtemplate</code> is easiest to install via</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'CTUtemplate'</span>, repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://ctu-bern.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'CTUtemplate'</span>, repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://dcr-unibe-ch.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p>Linux users might have to install from source:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"CTU-Bern/CTUtemplate"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"dcr-unibe-ch/CTUtemplate"</span><span class="op">)</span></span></code></pre></div>
 <p>This may require <code>Sys.setenv(R_REMOTES_NO_ERRORS_FROM_WARNINGS="true")</code> if packages were built under a different R version to the one you are using.</p>
 </div>
 <div class="section level2">
@@ -96,6 +96,13 @@
 <p>There is also an addin to insert a header at the top of an open script (“Add CTU header”).</p>
 </div>
 <div class="section level3">
+<h3 id="add-code-for-observed-ns-in-gtsummary">Add code for observed Ns in gtsummary<a class="anchor" aria-label="anchor" href="#add-code-for-observed-ns-in-gtsummary"></a>
+</h3>
+<p>gtsummary shows total Ns by default, which can lead to confusion, especially with regards the calculation of percentages in the presence of missing data.</p>
+<p>For ungrouped datasets (i.e. no by argument in <code>tbl_summary</code>), using add_n is sufficient. For grouped datasets (<code>tbl_summary(by = something)</code>), additional columns with the observed Ns can be added, but it requires a few lines of code.</p>
+<p>The ‘Add Ns for gtsummary’ addin places the necessary code into the active document. One part of the code is a function, which should be moved to an appropriate location for functions (e.g. 01_packages_functions.R). The rest can be integrated into a <code>tbl_summary</code> call.</p>
+</div>
+<div class="section level3">
 <h3 id="quarto-report-templates">Quarto report templates<a class="anchor" aria-label="anchor" href="#quarto-report-templates"></a>
 </h3>
 <p>We now also have some quarto report templates (more still to come, perhaps). At least RStudio v2022.01.1+554 is required for working with them.</p>
@@ -116,7 +123,7 @@
 <span><span class="co"># for typst report, which renders to PDF</span></span>
 <span><span class="fu"><a href="reference/use_qmd.html">use_qmd_typst</a></span><span class="op">(</span><span class="st">"folder"</span><span class="op">)</span></span></code></pre></div>
 <p>The above functions will download the templates and other necessary files and (optionally) open the <code>qmd</code> file for you. You should specify the location to save the files</p>
-<p>See also the <a href="https://github.com/CTU-Bern/quarto" class="external-link">quarto template repo</a> for more info on our quarto templates.</p>
+<p>See also the <a href="https://github.com/dcr-unibe-ch/quarto" class="external-link">quarto template repo</a> for more info on our quarto templates.</p>
 <p>See the <a href="https://quarto.org/docs/guide/" class="external-link">quarto guide</a> for loads of info.</p>
 </div>
 <div class="section level3">
@@ -229,7 +236,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
       </footer>
