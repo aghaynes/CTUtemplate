@@ -3,7 +3,7 @@
 
 # `CTUtemplate` <img src='man/figures/sticker.png' align="right" width="200">
 
-[![](https://img.shields.io/badge/dev%20version-0.6.7-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
+[![](https://img.shields.io/badge/dev%20version-0.6.10-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
 
 `CTUtemplate` is a package to create a template directory structure (and
 files) and also includes the CTUs annual safety report function.
@@ -61,6 +61,23 @@ You can also open the template code via
 There is also an addin to insert a header at the top of an open script
 (“Add CTU header”).
 
+### Add code for observed Ns in gtsummary
+
+gtsummary shows total Ns by default, which can lead to confusion,
+especially with regards the calculation of percentages in the presence
+of missing data.
+
+For ungrouped datasets (i.e. no by argument in `tbl_summary`), using
+add_n is sufficient. For grouped datasets
+(`tbl_summary(by = something)`), additional columns with the observed Ns
+can be added, but it requires a few lines of code.
+
+The ‘Add Ns for gtsummary’ addin places the necessary code into the
+active document. One part of the code is a function, which should be
+moved to an appropriate location for functions
+(e.g. 01_packages_functions.R). The rest can be integrated into a
+`tbl_summary` call.
+
 ### Quarto report templates
 
 We now also have some quarto report templates (more still to come,
@@ -103,13 +120,13 @@ info.
 `CTUtemplate` has an Rmd template for sample size reports and a more
 generic template with some examples of how to do things.
 
-| Function                    | Description                                                                          |
-|:----------------------------|:-------------------------------------------------------------------------------------|
-| `use_report_template`       | Opens a generic file with various examples                                           |
-| `use_ssreport_template`     | Opens a template for a sample size report                                            |
-| `use_recreport_template`    | Opens a template for a recruitment report                                            |
-| `use_param_report_template` | Opens template files for using parameterized reports                                 |
-| `use_ub_tex_template`       | Opens the UNIBE tex template allowing modifications for additional features of latex |
+| Function | Description |
+|:---|:---|
+| `use_report_template` | Opens a generic file with various examples |
+| `use_ssreport_template` | Opens a template for a sample size report |
+| `use_recreport_template` | Opens a template for a recruitment report |
+| `use_param_report_template` | Opens template files for using parameterized reports |
+| `use_ub_tex_template` | Opens the UNIBE tex template allowing modifications for additional features of latex |
 
 The functions are used to open a new template in the location designated
 (the recommended location would probably be `08_Reports_projnum`).
