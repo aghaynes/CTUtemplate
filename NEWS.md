@@ -1,5 +1,9 @@
 CTUtemplate 0.6.10
 ---------------------
+* add set.seed to template randolist code
+
+CTUtemplate 0.6.10
+---------------------
 * a function/RStudio addin to add gtsummary code for Ns for better showing missing data
 
 CTUtemplate 0.6.9
