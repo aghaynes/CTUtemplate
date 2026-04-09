@@ -1,4 +1,4 @@
-CTUtemplate 0.6.10
+CTUtemplate 0.6.11
 ---------------------
 * add set.seed to template randolist code
 
