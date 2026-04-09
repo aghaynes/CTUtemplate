@@ -65,6 +65,7 @@ strata_enc <- list(
 
 strata_labs <- lapply(strata_enc, `[[`, 1)
 
+set.seed(seed)
 r <- randolist(n_per_stratum, blocksizes = 1:3,
                arms = rando_enc$arm,
                strata = strata_labs)
