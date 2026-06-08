@@ -1,6 +1,10 @@
-CTUtemplate 0.6.11
+CTUtemplate 0.6.12
 ---------------------
 * bug fix: `use_qmd_...` generated "Error: argument ping is missing"
+
+CTUtemplate 0.6.11
+---------------------
+* add set.seed to template randolist code
 
 CTUtemplate 0.6.10
 ---------------------
