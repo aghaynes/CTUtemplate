@@ -1,3 +1,7 @@
+CTUtemplate 0.6.11
+---------------------
+* bug fix: `use_qmd_...` generated "Error: argument ping is missing"
+
 CTUtemplate 0.6.10
 ---------------------
 * a function/RStudio addin to add gtsummary code for Ns for better showing missing data
