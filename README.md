@@ -3,7 +3,7 @@
 
 # `CTUtemplate` <img src='man/figures/sticker.png' align="right" width="200">
 
-[![](https://img.shields.io/badge/dev%20version-0.6.10-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
+[![](https://img.shields.io/badge/dev%20version-0.6.12-blue.svg)](https://github.com/dcr-unibe-ch/CTUtemplate)
 
 `CTUtemplate` is a package to create a template directory structure (and
 files) and also includes the CTUs annual safety report function.
@@ -120,13 +120,13 @@ info.
 `CTUtemplate` has an Rmd template for sample size reports and a more
 generic template with some examples of how to do things.
 
-| Function                    | Description                                                                          |
-|:----------------------------|:-------------------------------------------------------------------------------------|
-| `use_report_template`       | Opens a generic file with various examples                                           |
-| `use_ssreport_template`     | Opens a template for a sample size report                                            |
-| `use_recreport_template`    | Opens a template for a recruitment report                                            |
-| `use_param_report_template` | Opens template files for using parameterized reports                                 |
-| `use_ub_tex_template`       | Opens the UNIBE tex template allowing modifications for additional features of latex |
+| Function | Description |
+|:---|:---|
+| `use_report_template` | Opens a generic file with various examples |
+| `use_ssreport_template` | Opens a template for a sample size report |
+| `use_recreport_template` | Opens a template for a recruitment report |
+| `use_param_report_template` | Opens template files for using parameterized reports |
+| `use_ub_tex_template` | Opens the UNIBE tex template allowing modifications for additional features of latex |
 
 The functions are used to open a new template in the location designated
 (the recommended location would probably be `08_Reports_projnum`).
