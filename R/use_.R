@@ -349,6 +349,6 @@ use_quarto <- function(x, dir, open = TRUE){
   }
 }
 
-if_no_ping_stop <- function(ping){
+if_no_ping_stop <- function(ping = TRUE){
   if(ping) if(!canPingSite("raw.githubusercontent.com")) stop("check internet connection")
 }
